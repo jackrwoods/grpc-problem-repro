@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+
+package org.example;
+
+
+service ExampleService {
+  rpc nothingDoer(Payload) returns (Payload) {}
+}
+
+message Payload {
+  string message = 1;
+}
