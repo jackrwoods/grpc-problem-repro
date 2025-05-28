@@ -16,7 +16,7 @@ object MainKotlinCoroutineVersion {
         val stub = ExampleServiceGrpcKt.ExampleServiceCoroutineStub(channel)
             .withMaxOutboundMessageSize(0) // Forces everything to exceed this limit
 
-        println("Sending message")
+        println("Sending message (Kotlin)")
         val response = runBlocking {
             stub.nothingDoer(Payload.newBuilder().setMessage("hello world").build())
         }

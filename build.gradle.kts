@@ -20,9 +20,9 @@ repositories {
 
 dependencies {
     implementation("io.grpc:grpc-netty:1.46.0")
-    implementation("io.grpc:grpc-protobuf:1.53.0")
+    implementation("io.grpc:grpc-protobuf:1.72.0")
     implementation("io.grpc:grpc-kotlin-stub:1.4.1")
-    implementation("io.grpc:grpc-stub:1.46.0")
+    implementation("io.grpc:grpc-stub:1.72.0")
     implementation("io.grpc:grpc-bom:1.63.2")
     implementation("com.google.protobuf:protoc:3.24.0")
     implementation("com.google.protobuf:protobuf-java:3.24.0")

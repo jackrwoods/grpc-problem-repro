@@ -15,7 +15,7 @@ public class Main {
         ExampleServiceGrpc.ExampleServiceBlockingStub stub = ExampleServiceGrpc.newBlockingStub(channel)
                 .withMaxOutboundMessageSize(0); // Forces everything to exceed this limit
 
-        System.out.println("Sending message");
+        System.out.println("Sending message (Java)");
         Payload response = stub.nothingDoer(Payload.newBuilder().setMessage("hello world").build());
         System.out.println("Received message");
         System.out.println(response.getMessage());
