@@ -9,6 +9,7 @@ plugins {
     id("idea")
     id("com.google.protobuf") version("0.9.4")
     kotlin("jvm") version "2.0.20"
+    application
 }
 
 repositories {
@@ -30,6 +31,10 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
+}
+
+application {
+    mainClass = "org.example.Main"
 }
 
 protobuf {
